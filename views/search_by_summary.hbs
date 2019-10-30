@@ -1,0 +1,17 @@
+<table>
+    <tbody>
+        {{#each result}}
+        <tr>
+            <td>
+                <img src="{{ this.image }}" alt="">
+            </td>
+            <td>
+                <h3>Title: {{ this.name }}</h3>
+                <h5>Rating: {{ this.rating }}</h5>
+                <h5>Go to <a href="{{ this.official_site }}">site</a></h5>
+                <p>{{{ this.summary }}}</p> 
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
